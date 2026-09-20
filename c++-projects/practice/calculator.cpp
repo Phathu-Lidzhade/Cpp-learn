@@ -17,32 +17,33 @@ int main() {
   std::cout << "\nEnter second number: ";
   std::cin >> num2;
 
-  switch (mathOperator)
-  {
-  case '+':
-    result = num1 + num2;
-    std::cout << "Result: " << result;
-    break;
+  switch (mathOperator){
+    case '+':
+      result = num1 + num2;
+      std::cout << "Result: " << result;
+      break;
 
-  case '-':
-    result = num1 - num2;
-    std::cout << "Result: " << result;
-    break;
+    case '-':
+      result = num1 - num2;
+      std::cout << "Result: " << result;
+      break;
 
-  case '*':
-    result = num1 * num2;
-    std::cout << "Result: " << result;
-    break;
+    case '*':
+      result = num1 * num2;
+      std::cout << "Result: " << result;
+      break;
 
-  case '/':
-    result = num1 / num2;
-    std::cout << "Result: " << result;
-    break;
-  
-  default:
-    std::cout << "Enter a valid operator.";
-    break;
+    case '/':
+      result = num1 / num2;
+      std::cout << "Result: " << result;
+      break;
+    
+    default:
+      std::cout << "Enter a valid operator.";
+      break;
   }
+
+  std::cout << "\n\n******************************************************\n";
 
   return 0;
 }
