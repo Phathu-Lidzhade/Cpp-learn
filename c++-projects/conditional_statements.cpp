@@ -27,6 +27,7 @@ int main() {
   //switch statements = an alternative to using many "else if" statements
   //                    compare one value against matching cases
 
+  /*
   int month;
 
   //std::cout << "Enter the month (1-12): ";
@@ -118,6 +119,31 @@ int main() {
     std::cout << "Please only enter a latter grade (A-F)";
     break;
   }
+    */
+
+    // ternary operator ?: = an alternative to an if/else statement
+    // condition ? expression if true : expression if false
+    // it takes 3 operands, a condition with a question mark, and two expressions separated by a colon
+
+    int grade = 75;
+
+    /*
+    if (grade >= 60)
+    {
+      std::cout << "You passed!";
+    }
+    else
+    {
+      std::cout << "You failed.";
+    }
+      */
+
+    grade >= 60 ? std::cout << "You passed!\n" : std::cout << "You failed.\n";
+
+    bool hungry = false;
+    //hungry ? std::cout << "You are hungry." : std::cout << "You are not hungry.";
+    std::cout << (
+       hungry ? "You are hungry." : "You are not hungry.");
 
   return 0;
 }
